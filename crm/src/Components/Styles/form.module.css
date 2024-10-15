@@ -1,0 +1,73 @@
+.container {
+  width: 100%;
+  min-height: 100vh;
+  position: relative;
+}
+.container img {
+  width: 100%;
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  left: 0;
+  object-fit: cover;
+}
+.container .containerLayer {
+  width: 100%;
+  min-height: 100vh;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.8);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container .containerLayer form {
+  width: 550px;
+  padding: 30px 0;
+  background-color: #fff;
+  border-radius: 15px;
+  box-shadow: 0 0 20px 3px rgba(0, 0, 0, 0.2);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 20px;
+}
+.container .containerLayer form h1 {
+  font-size: 35px;
+}
+.container .containerLayer form input {
+  transition: 0.5s;
+  width: 450px;
+  padding: 10px;
+  border: none;
+  outline: none;
+  box-shadow: 0 0 20px 1px rgba(0, 0, 0, 0.1);
+  border-radius: 4px;
+  font-size: 15px;
+}
+.container .containerLayer form input::placeholder {
+  color: lightgray;
+  transition: 0.5s;
+}
+.container .containerLayer form input:focus::placeholder {
+  color: gray;
+}
+.container .containerLayer form input:focus {
+  box-shadow: 0 0 20px 1px rgba(0, 0, 0, 0.3);
+  transform: translateY(-5px);
+}
+.container .containerLayer form button {
+  padding: 10px 45px;
+  background-color: coral;
+  color: #fff;
+  border: 1px solid coral;
+  transition: 0.5s;
+  cursor: pointer;
+  font-size: 15px;
+  letter-spacing: 2px;
+}
+.container .containerLayer form button:hover {
+    opacity: 0.7;
+}
